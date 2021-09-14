@@ -1,0 +1,42 @@
+
+.tile {
+  animation: left-right 20s linear infinite;
+}
+@keyframes left-right {
+  0% {transform:translateX(0%)}
+  100% {transform:translateX(-350%)}
+}
+
+.entry {
+  animation: bottom-top 1s linear;
+}
+@keyframes bottom-top {
+  from {
+      opacity: 0;
+      transform: translateY(40px)
+  }
+
+  to {
+      transform: translateY(0);
+      opacity: 1
+  }
+}
+
+.typewriter {
+  width: 50ch;
+  animation: typing 3s steps(22);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+.gradient {
+  background: linear-gradient(
+90deg, #000000 0%, #1d0000 100%);
+}
+
